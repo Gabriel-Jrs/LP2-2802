@@ -9,7 +9,6 @@ let pokemao = {
   ataqueInicial: Math.floor(Math.random() * 3) + 1,
 }
 
-function batalhar() {
   let inimigo = { hp: Math.floor(Math.random() * 6) + 5, ataque: Math.floor(Math.random() * 5) }
   console.log("\nBatalha contra inimigo (HP:", inimigo.hp, "Ataque:", inimigo.ataque, ")")
   
@@ -30,9 +29,8 @@ function batalhar() {
     pokemao.derrotas++
     console.log("\nPokemão perdeu!")
   }
-}
 
-function listarObjeto() {
+
   console.log("\nInicial:", pokemao.hpInicial, pokemao.ataqueInicial)
   console.log("Atual:", pokemao.hp, pokemao.ataque, pokemao.vitorias, pokemao.derrotas)
 }
@@ -45,3 +43,4 @@ while (true) {
   if (opcao === "4") break
   if (!["1", "2", "3", "4"].includes(opcao)) console.log("Opção inválida.")
 }
+
